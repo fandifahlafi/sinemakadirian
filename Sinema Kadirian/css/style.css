@@ -1,0 +1,258 @@
+section {
+	min-height: 300px;
+}
+h1 {
+	color: #fff;
+}
+h2 {
+	padding-top: 40px;
+	color: #fff;
+}
+p {
+	color: #fff;
+}
+hr {
+	width: 200px;
+	border-top: 3px solid #fff; 
+}
+/* Nav-bar */
+.nav-bar ul {
+	height: 35px;
+	background-color: #000d11;
+	overflow: hidden;
+	list-style-type: none;
+	margin-bottom: 0;
+}
+.nav-bar a {
+	color: #fff;
+	text-decoration: none;
+}
+.nav-bar li {
+	color: #fff;
+	margin-top: 5px;
+	margin-right: 45px;
+	display: inline;
+	float: right;
+}
+.nav-bar a:hover{
+	list-style: none;
+	color: #aa6328;
+}
+
+
+/* parallax */
+.parallax {
+	height: 700px;
+	position: relative;
+	overflow: hidden;
+	background-image: url(../img/sky.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	z-index: 2;
+}
+.layer-1 {
+	background-image: url(../img/hutan.png);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 7;
+}
+.layer-2 {
+	background-image: url(../img/semak.png);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 6;
+}
+.layer-3 {
+	background-image: url(../img/gunung.png);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.layer-4 {
+	background-image: url(../img/pohon.png);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 5;
+}
+.sinema {
+	padding-top: 40px;
+	position: relative;
+	z-index: 6;
+}
+.parallax .sinema-kadirian {
+	width: 220px;
+}
+
+
+
+/* agenda */
+.agenda {
+	position: relative;
+	padding-top: 120px;
+	background-color: #000d11;
+}
+.agenda .poster-agenda {
+	/*width: 250px;*/
+	border: 3px solid #fff;
+	border-radius: 10px;
+	margin-bottom: 55px;
+	margin-top: 30px;
+	opacity: 0;
+	transform: scale(0);
+	transition: .5s;
+}
+.agenda .poster-agenda.load {
+	opacity: 1;
+	transform: scale(1);
+	filter: grayscale(100%);
+}
+.agenda .poster-agenda.load:hover {
+	cursor: zoom-in;
+	filter: grayscale(0);
+	transform: scale(1.1);
+}
+.agenda-box {
+	position: relative;
+	overflow: hidden;
+	max-width: 100%;
+}
+.text-box {
+	width: 500px;
+	height: 500px;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px; 
+	text-align: center;
+	display: block;
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	margin-left: 22px;
+	transition: .5s;
+	color: #fff;
+}
+ .agenda-box:hover .text-box {
+	opacity: 1;
+	background-color: rgba(0,0,0, .8);
+}
+.lb-model {
+	position: fixed;
+	display: none;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.8);
+	z-index: 10;
+	opacity: 0;
+	animation: fadeIn .5s forwards;
+}
+.lightbox-content {
+	display: none;
+	opacity: 0;
+	animation: moveUp .5s forwards;
+}
+.nav-lb {
+	text-align: left;
+	margin-left: 0px;
+	padding-top: 50px;
+}
+.pict img {
+	margin-right: 20px;
+	margin-bottom: 20px;
+	border : 2px solid #fff;
+	border-radius: 20px;
+}
+.nav-lb li {
+	display: inline;
+	margin-right: 10px;
+}
+
+/* Support */
+.support {
+	padding-top: 150px;
+	min-height: 400px;
+	background-color: #000d11;
+}
+.support hr {
+	width: 100%;
+	border-top: 1px solid #fff;	
+}
+.support .layout-pic {
+	padding-top: 30px;
+	padding-bottom: 10px; 
+}
+.support li {
+	display: inline;
+	margin-right: 33px;
+	list-style-type: none;
+}
+.support a:hover {
+	text-decoration: none;
+}
+
+
+/* About */
+.about {
+	background-color: #000d11;
+	min-height: 350px;
+}
+.about .about-content {
+	opacity: 0;
+	transform: translate(0, -15px);
+	transition: .5s;
+}
+.about .about-content.load {
+	opacity: 1;
+	transform: translate(0, 0);
+}
+.about p {
+	padding-top: 25px;
+}
+.about .ig-logo {
+	width: 120px;
+	opacity: 0;
+	transform: scale(0);
+	transition: .5s;
+}
+.about .ig-logo.load {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.about .ig-logo.load:hover {
+	transform: scale(1.2);
+}
+
+/* Footer */
+.footer {
+	background-color: #000d11;
+}
+.footer img {
+	width: 35px;
+}
+
+
+
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes moveUp {
+	0% {
+		transform: translate(0, 50px);
+	}
+	100% {
+		transform: translate(0, 0);
+		opacity: 1;
+	}
+}

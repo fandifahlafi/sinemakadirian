@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
+
+    <title>Sinema Kadirian</title>
+  </head>
+  <body>
+    <div class="nav-bar">
+      <ul>
+          <li><a href="#about" class="page-scroll">About</a></li>
+          <li><a href="#agenda" class="page-scroll">Agenda</a></li>
+      </ul>
+    </div>
+  	<!-- parallax -->
+    <div class="parallax">
+      <div class="layer-1"></div>
+      <div class="layer-2"></div>
+      <div class="layer-3"></div>
+      <div class="layer-4"></div>
+      	<div class="sinema text-center">
+          <img src="img/sinema-kadirian.png" alt="sinema-kadirian" class="sinema-kadirian">
+        	<h1>Sinema Kadirian</h1>
+        	<p><em>Based on community</em></p>
+      </div>
+    </div>
+    <!-- parallax -->
+   
+
+    <!-- agenda -->
+   	<section class="agenda" id="agenda">
+	    <div class="container">
+	    	<div class="row text-center">
+	    		<div class="col-sm-4">
+              <img src="img/agenda/thumb/1.jpg" alt="Marlina" onclick="openLb();currentSlide(1);" class="poster-agenda">
+	    		</div>
+          <div class="col-sm-4">
+              <img src="img/agenda/thumb/2.jpg" alt="Screening and Discussion" onclick="openLb();currentSlide(2)" class="poster-agenda">
+          </div>
+          <div class="col-sm-4">
+              <img src="img/agenda/thumb/3.jpg" alt="Brafis" onclick="openLb();currentSlide(3);" class="poster-agenda">
+          </div>
+  <!-- lightbox -->
+          <div id="lightbox" class="lb-model">
+            <div class="nav-lb">
+              <ul>
+                <li>
+                  <button type="button" class="prev-lb btn btn-primary" onclick="plusSlides(-1);">Previous</button>
+                </li>
+                <li>  
+                  <button type="button" class="close-lb btn btn-danger" onclick="closeLb();">&times;</button>
+                </li>
+                <li>  
+                  <button type="button" class="next-lb btn btn-primary" onclick="plusSlides(1);">Next</button>
+                </li>  
+              </ul>
+            </div>
+            <div class="lightbox-content">
+              <div class="row">
+                <div class="col-sm-5">
+                <div class="agenda-box">
+                   <img src="img/agenda/full/1.jpg" style="max-width: 100%; height: auto;">
+                   <div class="text-box">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</div>
+                </div>             
+                </div>
+                  <div class="col-sm-7">
+                     <div class="pict">
+                        <img src="img/agenda/full/pict/1.jpg">
+                        <img src="img/agenda/full/pict/2.jpg">
+                        <img src="img/agenda/full/pict/3.jpg">
+                        <img src="img/agenda/full/pict/4.jpg">
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <div class="lightbox-content">
+              <div class="row">
+                <div class="col-sm-5">
+                  <div class="agenda-box">
+                    <img src="img/agenda/full/2.jpg">
+                    <div class="text-box">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</div>
+                  </div>             
+                </div>
+                <div class="col-sm-7">
+                     <div class="pict">
+                        <img src="img/agenda/full/pict/1.jpg">
+                        <img src="img/agenda/full/pict/2.jpg">
+                        <img src="img/agenda/full/pict/3.jpg">
+                        <img src="img/agenda/full/pict/4.jpg">
+                      </div>
+                  </div>
+              </div>
+            </div>
+              <div class="lightbox-content">
+              <div class="row">
+                <div class="col-sm-5">
+                  <div class="agenda-box">
+                    <img src="img/agenda/full/3.jpg">
+                    <div class="text-box">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</div>
+                  </div>             
+                </div>
+                <div class="col-sm-7">
+                     <div class="pict">
+                        <img src="img/agenda/full/pict/1.jpg">
+                        <img src="img/agenda/full/pict/2.jpg">
+                        <img src="img/agenda/full/pict/3.jpg">
+                        <img src="img/agenda/full/pict/4.jpg">
+                      </div>
+                  </div>
+           </div>
+          </div>
+	    	</div>
+	    </div>
+	</section>
+	<!-- akhir agenda -->
+
+
+  <!-- support -->
+  <section class="support" id="support">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+        <div class="layout-pic">
+          <ul>
+              <li>
+                  <img src="img/support/ladang-bibit.png">
+              </li>
+              <li>
+                  <img src="img/support/sinema-kadirian.png">
+              </li>
+              <li>
+                  <img src="img/support/brafis.png">
+              </li>
+              <li>
+                  <img src="img/support/infokediri.png">
+              </li>
+              <li>
+                  <img src="img/support/aktivis-peneleh.png">
+              </li>
+              <li>
+                  <img src="img/support/stackoverflow.png">
+              </li>
+              <li>
+                  <img src="img/support/hvs.png">
+              </li>
+              <li>
+                  <img src="img/support/kediriapik.png">
+              </li>
+         </ul>
+        </div>
+      </div>
+          <div class="row">
+          <div class="col-sm-12">
+            <hr>
+          </div>
+    </div>
+  </section>
+  <!-- akhir support -->
+  <!-- about -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 offset-3 text-center">
+          <p class="about-content"><b>Sinema Kadirian</b> is a community with a variety of film discourse in the area of ​​Kediri.
+            <b>Make | Create | Appreciate</b></p>
+          <a href="https://www.instagram.com/sinemakadirian">
+            <img src="img/instagram.png" alt="sinema-kadirian" class="ig-logo">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- akhir about -->
+  
+  <!-- footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <p class="text-center"><img src="img/sinema-kadirian.png">2020 Copyright | Kediri, East Java 64132 | <i class="far fa-envelope"></i> sinemakadirian@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- akhir footer -->
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+  src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
